@@ -1,0 +1,71 @@
+:root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  background-color: hsl(211, 68%, 94%);
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 20px;
+}
+img {
+  border-radius: 50%;
+  width: 50px;
+}
+.container {
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  width: 900px;
+}
+.number-of-notifications {
+  padding-block: 1px;
+  padding-inline: 12px;
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 25%;
+  color: hsl(0, 0%, 100%);
+}
+button,
+.notification {
+  cursor: pointer;
+}
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+.message {
+  width: 500px;
+  padding: 10px;
+  background-color: hsl(205, 33%, 90%);
+  color: hsl(219, 14%, 63%);
+  border-radius: 5px;
+  margin-block: auto;
+}
+.notification {
+  display: flex;
+}
+.notification strong,
+time {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 375px) {
+  body {
+    display: block;
+  }
+}
