@@ -2,11 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  color-scheme: dark light;
 }
 body {
   min-height: 100vh;
