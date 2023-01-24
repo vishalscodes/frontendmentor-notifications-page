@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  font-family: 'PlusJakartaSans',sans-serif;
+  box--sizing: rder-box;
 }
 body {
   min-height: 100vh;
