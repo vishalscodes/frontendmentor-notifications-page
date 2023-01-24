@@ -1,8 +1,8 @@
 *,
 *::before,
 *::after {
-  font-family: 'PlusJakartaSans',sans-serif;
-  box--sizing: rder-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  box-sizing: border-box;
 }
 body {
   min-height: 100vh;
