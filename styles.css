@@ -2,6 +2,7 @@
 *,
 *::before,
 *::after {
+  --link-hover: #0a317b;
   font-family: "Plus Jakarta Sans", sans-serif;
   padding: 0%;
   margin: 0%;
@@ -54,7 +55,8 @@ select {
   border: 1px solid black;
   border-radius: 0.3rem;
   cursor: pointer;
-  margin: 0 0 0 5rem;
+  padding: 1rem;
+  margin: 0 0 0 0rem;
 }
 .message:hover {
   background-color: hsl(211, 68%, 94%);
@@ -84,4 +86,19 @@ header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2rem;
+}
+.link:hover {
+  color: var(--link-hover);
+}
+.notification-formatting time {
+  display: flex;
+  flex-direction: column;
+}
+.notification-formatting .message {
+  display: flex;
+  flex-direction: column;
+}
+.chess {
+  display: flex;
+  justify-content: right;
 }
