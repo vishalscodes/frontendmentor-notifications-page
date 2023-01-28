@@ -1,0 +1,87 @@
+/* resets */
+*,
+*::before,
+*::after {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 1rem;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  cursor: pointer;
+}
+/* general styles */
+.container {
+  width: 700px;
+}
+.mark-as-read-button {
+  border: none;
+  background-color: white;
+  color: #8e9196;
+  display: flex;
+}
+.number-of-notifications {
+  color: white;
+  background-color: #103675;
+  border-radius: 5px;
+}
+.notification {
+  background-color: #f6fafd;
+  display: flex;
+  align-items: center;
+}
+.notification__container {
+  display: flex;
+  align-items: center;
+}
+.message {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 0 0 0 5rem;
+}
+.message:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+time {
+  display: block;
+  padding-left: 1px;
+}
+.image {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  margin-right: 5px;
+}
+strong {
+  display: inline;
+  padding-inline: 3px;
+}
+.notification_image_text {
+  flex-direction: column;
+}
+.bg-darkblue {
+  background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
