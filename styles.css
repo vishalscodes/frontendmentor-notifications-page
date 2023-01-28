@@ -56,7 +56,7 @@ select {
   border-radius: 0.3rem;
   cursor: pointer;
   padding: 1rem;
-  margin: 0 0 0 0rem;
+  margin-left: 50px;
 }
 .message:hover {
   background-color: hsl(211, 68%, 94%);
@@ -94,11 +94,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-.notification-formatting .message {
+.notification__image--main-message-content {
   display: flex;
-  flex-direction: column;
-}
-.chess {
-  display: flex;
-  justify-content: right;
 }
