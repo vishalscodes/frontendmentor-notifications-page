@@ -36,6 +36,9 @@ select {
   color: #8e9196;
   display: flex;
 }
+.mark-as-read-button:hover {
+  color: #0a317b;
+}
 .number-of-notifications {
   color: white;
   background-color: #103675;
@@ -96,4 +99,14 @@ header {
 }
 .notification__image--main-message-content {
   display: flex;
+}
+.np-bold {
+  margin: 0;
+  padding: 0;
+}
+.align-right {
+  display: flex;
+}
+.chess:hover {
+  border: 1px solid #f7fafd;
 }

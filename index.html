@@ -27,7 +27,7 @@
   </head>
   <body>
     <main class="container">
-      <header class="header ml-2 mt-5">
+      <header class="header mx-2 mt-5">
         <h1 class="title mb-1 is-5">
           Notifications
           <span class="number-of-notifications px-3 ml-1">3</span>
@@ -37,7 +37,7 @@
         >
       </header>
 
-      <div class="notification bg-darkblue">
+      <div class="notification bg-darkblue 1" onclick="">
         <div class="notification__container">
           <img src="assets\images\avatar-mark-webber.webp" class="image" />
           <div class="notification__content">
@@ -50,7 +50,7 @@
         <br />
       </div>
 
-      <div class="notification bg-darkblue">
+      <div class="notification bg-darkblue 2" onclick="">
         <div class="notification__container">
           <img
             src="assets\images\avatar-angela-gray.webp "
@@ -60,7 +60,7 @@
           ></div>
         </div>
       </div>
-      <div class="notification bg-darkblue">
+      <div class="notification bg-darkblue 3" onclick="">
         <div class="notification__container">
           <img
             src="assets\images\avatar-jacob-thompson.webp"
@@ -96,9 +96,11 @@
           <img
             src="assets\images\avatar-kimberly-smith.webp"
             class="image"
-          /><div class="notification-formatting"><strong>Kimberly Smith</strong> commented on your picture
+          /><div class="notification-formatting"><div class="align-right"><div><strong>Kimberly Smith</strong> commented on your picture
           <br /><time>1 week ago</time></div>
-          <img src="assets/images/image-chess.webp" alt="Chess" class="image chess">
+          <div class="img-container"><img src="assets/images/image-chess.webp" alt="Chess" class="image chess"></div></div>
+        </div>
+          
         </div>
       </div>
 
@@ -107,7 +109,7 @@
           <img
             src="assets\images\avatar-nathan-peterson.webp"
             class="image"
-          /><div class="notification-formatting"><strong>Nathan Peterson</strong>
+          /><div class="notification-formatting"><strong class="np-bold">Nathan Peterson</strong>
           reacted to your recent post
           <strong>5 end-game strategies to increase your win rate</strong>
           <br /><time>2 weeks ago</time></div>
@@ -118,11 +120,17 @@
         <div class="notification__container">
           <img src="assets\images\avatar-anna-kim.webp" class="image" />
           <div class="notification-formatting">
-            <strong>Anna Kim</strong> left the group
+            <strong class="np-bold">Anna Kim</strong> left the group
             <strong>Chess Club</strong> <br /><time>2 weeks ago</time>
           </div>
         </div>
       </div>
     </main>
+    <script>
+      let x = document.getElementsByClassName('bg-darkblue')
+      let y = document.getElementsByClassName('1')
+      let z = document.getElementsByClassName('2')
+      let a = document.getElementsByClassName('3')
+    </script>
   </body>
 </html>
