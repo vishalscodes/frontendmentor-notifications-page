@@ -1,8 +1,13 @@
 /* resets */
+:root {
+  --link-hover: #0a317b;
+}
+:root > * {
+  word-break: break-word;
+}
 *,
 *::before,
 *::after {
-  --link-hover: #0a317b;
   font-family: "Plus Jakarta Sans", sans-serif;
   padding: 0%;
   margin: 0%;
@@ -105,7 +110,7 @@ header {
   padding: 0;
 }
 .align-right {
-  display: flex;
+  margin-inline: auto 0;
 }
 .chess:hover {
   border: 1px solid #f7fafd;
