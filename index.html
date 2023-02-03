@@ -30,14 +30,14 @@
       <header class="header mx-2 mt-5">
         <h1 class="title mb-1 is-5">
           Notifications
-          <span class="number-of-notifications px-3 ml-1">3</span>
+          <span id="number-of-notifications" class="px-3 ml-1">3</span>
         </h1>
 
         <button onclick="" class="mark-as-read-button">Mark all as read</button
         >
       </header>
 
-      <div class="notification bg-darkblue 1" onclick="">
+      <div class="notification bg-darkblue notification-1" onclick="notification_click()">
         <div class="notification__container">
           <img src="assets\images\avatar-mark-webber.webp" class="image" />
           <div class="notification__content">
@@ -50,7 +50,7 @@
         <br />
       </div>
 
-      <div class="notification bg-darkblue 2" onclick="">
+      <div class="notification bg-darkblue notification-2" onclick="notification_click()">
         <div class="notification__container">
           <img
             src="assets\images\avatar-angela-gray.webp "
@@ -60,7 +60,7 @@
           ></div>
         </div>
       </div>
-      <div class="notification bg-darkblue 3" onclick="">
+      <div class="notification bg-darkblue notification-3" onclick="notification_click()">
         <div class="notification__container">
           <img
             src="assets\images\avatar-jacob-thompson.webp"
@@ -124,10 +124,18 @@
       </div>
     </main>
     <script>
-      let x = document.getElementsByClassName('bg-darkblue')
-      let y = document.getElementsByClassName('1')
-      let z = document.getElementsByClassName('2')
-      let a = document.getElementsByClassName('3')
+      let backgroundBlue = document.getElementsByClassName('bg-darkblue')
+      let notif_1 = document.getElementsByClassName('notification-1')
+      let notif_2 = document.getElementsByClassName('notification-2')
+      let notif_3 = document.getElementsByClassName('notification-3')
+      let numberOfNotifications = document.getElementById('number-of-notifications')
+      numberOfNotifications = Number(numberOfNotifications)
+
+
+      function notification_click() {
+        numberOfNotifications = numberOfNotifications - 1;
+      }
+      numberOfNotifications = String(numberOfNotifications)
     </script>
   </body>
 </html>
